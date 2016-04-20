@@ -118,6 +118,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="modificationStamps">
       <map>
@@ -172,7 +175,7 @@
     <option name="width" value="1920" />
     <option name="height" value="1015" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -954,12 +957,12 @@
       <workItem from="1459922923467" duration="34609000" />
       <workItem from="1460606860104" duration="21180000" />
       <workItem from="1460762715797" duration="7000" />
-      <workItem from="1461130785518" duration="8820000" />
+      <workItem from="1461130785518" duration="9006000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103849000" />
+    <option name="totallyTimeSpent" value="104035000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

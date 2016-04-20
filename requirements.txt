@@ -1,0 +1,12 @@
+Django==1.9.4
+-e git://github.com/yceruto/django-ajax@671b59f49808aa3b8fad97f9501019b0d4a546cf#egg=djangoajax-2.3.5
+douban-client==0.0.6
+MySQL-python==1.2.5
+py-oauth2==0.0.10
+pymongo==3.2.2
+redis==2.10.5
+requests==2.9.1
+ruamel.ordereddict==0.4.9
+ruamel.yaml==0.11.7
+six==1.10.0
+wheel==0.24.0
