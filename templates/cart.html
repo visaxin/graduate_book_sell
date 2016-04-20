@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block head %}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap.min.css'%}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'assets/css/custom.css'%}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css'%}">
+
+{% endblock%}
+{% block container%}
+
+<body>
+
+
+<div class="container-fluid breadcrumbBox text-center">
+    <ol class="breadcrumb">
+        <li id="order_status" class="active">请下订单!</li>
+    </ol>
+</div>
+
+<div class="container text-center">
+
+    <div class="col-md-5 col-sm-12">
+        <div class="bigcart"></div>
+        <h1>{{ user.get_full_name }}</h1>
+        <p>
+        </p>
+    </div>
+
+    <ul class="col-md-7 col-sm-12 text-left">
+        <ul>
+            <li class="row list-inline columnCaptions">
+                <span>数量</span>
+                <span>名字</span>
+                <span>价格</span>
+            </li>
+
+            {% for c in carts %}
+            <div id="{{ c.book_id}}">
+            <li class="row">
+                <span class="quantity">{{c.book_quantity}}</span>
+                <span class="itemName">{{c.book_title}}</span>
+                <span class="popbtn"></span>
+                <span class="price">{{c.book_price}}</span>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                   aria-expanded="false">操作 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="javascript:void(0)" onclick="delete_item('{{c.book_id}}','{{c.cart_owner}}')">删除{{c.book_title}}</a></li>
+                </ul>
+            </li>
+            </div>
+            {% endfor %}
+
+        </ul>
+        <ul>
+            <button id="order_btn" class="btn btn-danger" onclick="order()">下单</button>
+        </ul>
+</div>
+
+
+</div>
+
+<!-- The popover content -->
+
+<div id="popover" style="display: none">
+    <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+    <a href="#"><span class="glyphicon glyphicon-remove"></span></a>
+</div>
+
+<!-- JavaScript includes -->
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/js/customjs.js'%}"></script>
+<script src="{% static 'js/bootstrap.js'%}"></script>
+
+</body>
+<script type="text/javascript">
+    function delete_item(book_id,cart_owner){
+        ajaxPost('/cart/item/', {'item':book_id,'owner':cart_owner}, function (content) {
+            //onSuccess
+            $("#"+book_id).remove()
+        })
+    }
+
+    function order(){
+        ajaxPost('/order/', {},function (content) {
+            //onSuccess
+            if(content == "success!"){
+                $("#order_status").text("成功下单,请不要重复下单!");
+                $("#order_btn").text("已经下单!");
+                $("#order_btn").attr("disabled", true);
+            }
+        })
+    }
+</script>
+{% endblock container %}

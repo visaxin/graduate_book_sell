@@ -1,0 +1,1551 @@
+Not Found: /book/detail
+Not Found: /accounts/login/book/detail
+Not Found: /login/book/detail
+Not Found: /book/detail
+Not Found: /favicon.ico
+Forbidden (CSRF token missing or incorrect.): /cart/
+Forbidden (CSRF token missing or incorrect.): /cart/
+Forbidden (CSRF token missing or incorrect.): /cart/
+Forbidden (CSRF token missing or incorrect.): /cart/
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view online.tag_views.detailView didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view online.tag_views.detailView didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view online.tag_views.detailView didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 150, in cart_view
+    return render(request,'cart.html',{})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 510, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 572, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+TemplateSyntaxError: Invalid block tag on line 8: 'static'. Did you forget to register or load this tag?
+Not Found: /cart/{% static 'assets/js/customjs.js'%
+Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 156, in cart_add_view
+    mdb.cart.update_one(mres, {'$inc': {'book_quantity': int(mres[0]['book_quantity']) + 1}})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/collection.py", line 830, in update_one
+    common.validate_is_mapping("filter", filter)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/common.py", line 375, in validate_is_mapping
+    "collections.Mapping" % (option,))
+TypeError: filter must be an instance of dict, bson.son.SON, or other type that inherits from collections.Mapping
+Internal Server Error: /accounts/logout/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/jason/Graduate/booksell/online/views.py", line 69, in logoutRequest
+    return indexView(request)
+  File "/Users/jason/Graduate/booksell/online/views.py", line 30, in indexView
+    logger.info(request.user.get_full_name() + "visited!")
+AttributeError: 'AnonymousUser' object has no attribute 'get_full_name'
+Not Found: /book/detail
+Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 155, in cart_add_view
+    mdb.cart.update_one(mres, {'$inc': {'book_quantity': int(mres[0]['book_quantity']) + 1}})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/collection.py", line 830, in update_one
+    common.validate_is_mapping("filter", filter)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/common.py", line 375, in validate_is_mapping
+    "collections.Mapping" % (option,))
+TypeError: filter must be an instance of dict, bson.son.SON, or other type that inherits from collections.Mapping
+Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 157, in cart_add_view
+    mdb.cart.update_one(mres, {'$inc': {'book_quantity': int(mres[0]['book_quantity']) + 1}})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/collection.py", line 830, in update_one
+    common.validate_is_mapping("filter", filter)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/common.py", line 375, in validate_is_mapping
+    "collections.Mapping" % (option,))
+TypeError: filter must be an instance of dict, bson.son.SON, or other type that inherits from collections.Mapping
+Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 159, in cart_add_view
+    mdb.cart.update_one(mres, {'$inc': {'book_quantity': int(mres[0]['book_quantity']) + 1}})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/collection.py", line 830, in update_one
+    common.validate_is_mapping("filter", filter)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/common.py", line 375, in validate_is_mapping
+    "collections.Mapping" % (option,))
+TypeError: filter must be an instance of dict, bson.son.SON, or other type that inherits from collections.Mapping
+Not Found: /admin
+Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 159, in cart_add_view
+    mdb.cart.update_one(mres, {'$inc': {'book_quantity': int(mres[0]['book_quantity']) + 1}})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/collection.py", line 830, in update_one
+    common.validate_is_mapping("filter", filter)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/common.py", line 375, in validate_is_mapping
+    "collections.Mapping" % (option,))
+TypeError: filter must be an instance of dict, bson.son.SON, or other type that inherits from collections.Mapping
+Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 159, in cart_add_view
+    mdb.cart.update_one(mres, {'$inc': {'book_quantity': int(mres[0]['book_quantity']) + 1}})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/collection.py", line 830, in update_one
+    common.validate_is_mapping("filter", filter)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/common.py", line 375, in validate_is_mapping
+    "collections.Mapping" % (option,))
+TypeError: filter must be an instance of dict, bson.son.SON, or other type that inherits from collections.Mapping
+Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 157, in cart_add_view
+    mdb.cart.update_one(mres, {'$inc': {'book_quantity': int(mres[0]['book_quantity']) + 1}})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/collection.py", line 830, in update_one
+    common.validate_is_mapping("filter", filter)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/common.py", line 375, in validate_is_mapping
+    "collections.Mapping" % (option,))
+TypeError: filter must be an instance of dict, bson.son.SON, or other type that inherits from collections.Mapping
+Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 157, in cart_add_view
+    mdb.cart.update_one(mfilter, {'$inc': {'book_quantity': int(mres[0]['book_quantity']) + 1}})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/collection.py", line 835, in update_one
+    bypass_doc_val=bypass_document_validation)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/collection.py", line 710, in _update
+    _check_write_command_response([(0, result)])
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/helpers.py", line 301, in _check_write_command_response
+    raise WriteError(error.get("errmsg"), error.get("code"), error)
+WriteError: Cannot apply $inc to a value of non-numeric type. {_id: ObjectId('570f628f036b067ab8c05d43')} has the field 'book_quantity' of non-numeric type String
+Not Found: /book/detail
+Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 161, in cart_add_view
+    cart['book_price'] = book_info['price']
+TypeError: 'NoneType' object has no attribute '__getitem__'
+Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 161, in cart_add_view
+    cart['book_price'] = book_info['price']
+TypeError: 'NoneType' object has no attribute '__getitem__'
+Not Found: /tag/小说
+Not Found: /book/detail
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 86, in detailView
+    if mdb_res.count() > 0:
+AttributeError: 'dict' object has no attribute 'count'
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 86, in detailView
+    if mdb_res.count():
+AttributeError: 'dict' object has no attribute 'count'
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 88, in detailView
+    return render(request, 'book_detail.html', mdb_res)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 92, in render
+    context = make_context(context, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/context.py", line 291, in make_context
+    context.push(original_context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/context.py", line 61, in push
+    return ContextDict(self, *dicts, **kwargs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/context.py", line 20, in __init__
+    super(ContextDict, self).__init__(*args, **kwargs)
+ValueError: dictionary update sequence element #0 has length 24; 2 is required
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 88, in detailView
+    return render(request, 'book_detail.html', mdb_res)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 92, in render
+    context = make_context(context, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/context.py", line 291, in make_context
+    context.push(original_context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/context.py", line 61, in push
+    return ContextDict(self, *dicts, **kwargs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/context.py", line 20, in __init__
+    super(ContextDict, self).__init__(*args, **kwargs)
+ValueError: dictionary update sequence element #0 has length 24; 2 is required
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 89, in detailView
+    return render(request, 'book_detail.html', {'result',mdb_res[0]})
+TypeError: unhashable type: 'dict'
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 89, in detailView
+    return render(request, 'book_detail.html', {'result',mdb_res})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 92, in render
+    context = make_context(context, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/context.py", line 291, in make_context
+    context.push(original_context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/context.py", line 61, in push
+    return ContextDict(self, *dicts, **kwargs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/context.py", line 20, in __init__
+    super(ContextDict, self).__init__(*args, **kwargs)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 89, in detailView
+    return render(request, 'book_detail.html', {'result',mdb_res})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 92, in render
+    context = make_context(context, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/context.py", line 291, in make_context
+    context.push(original_context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/context.py", line 61, in push
+    return ContextDict(self, *dicts, **kwargs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/context.py", line 20, in __init__
+    super(ContextDict, self).__init__(*args, **kwargs)
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+Not Found: /book/detail
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 105, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/defaulttags.py", line 220, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/defaulttags.py", line 220, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 1043, in render
+    output = self.filter_expression.resolve(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 709, in resolve
+    obj = self.var.resolve(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 850, in resolve
+    value = self._resolve_lookup(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/cursor.py", line 531, in __getitem__
+    self.__check_okay_to_chain()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/cursor.py", line 342, in __check_okay_to_chain
+    raise InvalidOperation("cannot set options after executing query")
+InvalidOperation: cannot set options after executing query
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 105, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/defaulttags.py", line 220, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/defaulttags.py", line 220, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 1043, in render
+    output = self.filter_expression.resolve(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 709, in resolve
+    obj = self.var.resolve(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 850, in resolve
+    value = self._resolve_lookup(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/cursor.py", line 531, in __getitem__
+    self.__check_okay_to_chain()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/cursor.py", line 342, in __check_okay_to_chain
+    raise InvalidOperation("cannot set options after executing query")
+InvalidOperation: cannot set options after executing query
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 105, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/defaulttags.py", line 220, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/defaulttags.py", line 220, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 1043, in render
+    output = self.filter_expression.resolve(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 709, in resolve
+    obj = self.var.resolve(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 850, in resolve
+    value = self._resolve_lookup(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/cursor.py", line 531, in __getitem__
+    self.__check_okay_to_chain()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/cursor.py", line 342, in __check_okay_to_chain
+    raise InvalidOperation("cannot set options after executing query")
+InvalidOperation: cannot set options after executing query
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 106, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/defaulttags.py", line 220, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/defaulttags.py", line 220, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 1043, in render
+    output = self.filter_expression.resolve(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 709, in resolve
+    obj = self.var.resolve(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 850, in resolve
+    value = self._resolve_lookup(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/cursor.py", line 531, in __getitem__
+    self.__check_okay_to_chain()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/cursor.py", line 342, in __check_okay_to_chain
+    raise InvalidOperation("cannot set options after executing query")
+InvalidOperation: cannot set options after executing query
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 104, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/defaulttags.py", line 220, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 1043, in render
+    output = self.filter_expression.resolve(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 709, in resolve
+    obj = self.var.resolve(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 850, in resolve
+    value = self._resolve_lookup(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/cursor.py", line 531, in __getitem__
+    self.__check_okay_to_chain()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/cursor.py", line 342, in __check_okay_to_chain
+    raise InvalidOperation("cannot set options after executing query")
+InvalidOperation: cannot set options after executing query
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 104, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 114: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 104, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 114: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 104, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 114: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 104, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 116: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 104, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 116: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 104, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 116: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 104, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 116: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 104, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 116: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 104, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 116: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 104, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 116: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 104, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 116: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 104, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 114: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 104, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 114: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 104, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 114: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 104, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 113: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 104, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 113: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 104, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/defaulttags.py", line 220, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 1043, in render
+    output = self.filter_expression.resolve(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 709, in resolve
+    obj = self.var.resolve(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 850, in resolve
+    value = self._resolve_lookup(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/cursor.py", line 531, in __getitem__
+    self.__check_okay_to_chain()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/cursor.py", line 342, in __check_okay_to_chain
+    raise InvalidOperation("cannot set options after executing query")
+InvalidOperation: cannot set options after executing query
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 104, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 141: 'endblock', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 104, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 113: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+Internal Server Error: /book/detail/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 104, in detailView
+    'comments': comments})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/defaulttags.py", line 220, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 1043, in render
+    output = self.filter_expression.resolve(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 709, in resolve
+    obj = self.var.resolve(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 850, in resolve
+    value = self._resolve_lookup(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/cursor.py", line 531, in __getitem__
+    self.__check_okay_to_chain()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/cursor.py", line 342, in __check_okay_to_chain
+    raise InvalidOperation("cannot set options after executing query")
+InvalidOperation: cannot set options after executing query
+Not Found: /book/detail
+Not Found: /book/detail
+Not Found: /favicon.ico
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/views.py", line 37, in indexView
+    return render(request, 'index.html', {'books': books, 'uu': request.user})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader_tags.py", line 209, in render
+    return template.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/defaulttags.py", line 220, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/defaulttags.py", line 582, in render
+    six.iteritems(self.extra_context)}
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/defaulttags.py", line 581, in <dictcomp>
+    values = {key: val.resolve(context) for key, val in
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 736, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/defaultfilters.py", line 50, in _dec
+    return mark_safe(func(*args, **kwargs))
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/defaultfilters.py", line 420, in center
+    return value.center(int(arg))
+ValueError: invalid literal for int() with base 10: '8.0'
+Not Found: /tag/小说
+Not Found: /tag/科技
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/views.py", line 37, in indexView
+    return render(request, 'index.html', {'books': books, 'uu': request.user})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/defaulttags.py", line 513, in render
+    six.reraise(*exc_info)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/urlresolvers.py", line 600, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/urlresolvers.py", line 508, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'q_tag' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: ['search/(?P<tag>\\w+)/$']
+Not Found: /search_tag/
+Internal Server Error: /accounts/logout/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/jason/Graduate/booksell/online/views.py", line 71, in logoutRequest
+    return indexView(request)
+  File "/Users/jason/Graduate/booksell/online/views.py", line 32, in indexView
+    logger.info(request.user.get_full_name() + "visited!")
+AttributeError: 'AnonymousUser' object has no attribute 'get_full_name'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/views.py", line 32, in indexView
+    logger.info(request.user.get_full_name() + "visited!")
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/utils/functional.py", line 205, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'get_full_name'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/views.py", line 33, in indexView
+    logger.info(request.user.get_full_name() + "visited!")
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/utils/functional.py", line 205, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'get_full_name'
+Forbidden (CSRF token missing or incorrect.): /accounts/login/
+Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 213, in cart_view
+    return render(request, 'cart.html', {'carts': user_cart_info})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/defaulttags.py", line 220, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/defaulttags.py", line 513, in render
+    six.reraise(*exc_info)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/defaulttags.py", line 499, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/urlresolvers.py", line 600, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/urlresolvers.py", line 508, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'delete_in_cart' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 244, in cart_view
+    return render(request, 'cart.html', {'carts': user_cart_info})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 231, in compile_nodelist
+    return parser.parse()
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 516, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Variables and attributes may not begin with underscores: 'c._id'
+Internal Server Error: /cart/item/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 216, in item_delete_view
+    mfilter = {'cart_owner': cart['cart_owner'], 'book_id': cart['book_id']}
+KeyError: 'cart_owner'
+Internal Server Error: /cart/item/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 216, in item_delete_view
+    mfilter = {'cart_owner': cart['cart_owner'], 'book_id': cart['book_id']}
+KeyError: 'cart_owner'
+Internal Server Error: /cart/item/
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 217, in item_delete_view
+    mres = mdb.cart.remote_one(mfilter)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/collection.py", line 2353, in __call__
+    self.__name.split(".")[-1])
+TypeError: 'Collection' object is not callable. If you meant to call the 'remote_one' method on a 'Collection' object it is failing because no such method exists.
+Not Found: /book/detail
+Internal Server Error: /cart/add
+Traceback (most recent call last):
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/jason/Graduate/booksell/online/tag_views.py", line 205, in cart_add_view
+    return render(request, 'cart.html', {'carts': user_cart_info})
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader_tags.py", line 173, in render
+    return compiled_parent._render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/loader_tags.py", line 69, in render
+    result = block.nodelist.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 992, in render
+    bit = node.render_annotated(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/base.py", line 959, in render_annotated
+    return self.render(context)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/django/template/defaulttags.py", line 167, in render
+    values = list(values)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/cursor.py", line 1090, in next
+    if len(self.__data) or self._refresh():
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/cursor.py", line 1012, in _refresh
+    self.__read_concern))
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/cursor.py", line 850, in __send_message
+    **kwargs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/mongo_client.py", line 798, in _send_message_with_response
+    exhaust)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/mongo_client.py", line 809, in _reset_on_error
+    return func(*args, **kwargs)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/server.py", line 108, in send_message_with_response
+    set_slave_okay, sock_info.is_mongos, use_find_cmd)
+  File "/Users/jason/PythonEnv/graduate/lib/python2.7/site-packages/pymongo/message.py", line 283, in get_message
+    spec, self.fields, self.codec_options)
+InvalidDocument: Cannot encode object: <SimpleLazyObject: <User: jason>>
+Not Found: /book/detail
